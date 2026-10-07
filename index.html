@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Skills Test</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fceff3;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container {
+        background-color: #fff8fa;
+        width: 350px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        color: #c77d9b;
+    }
+
+    label {
+        color: #6d5360;
+    }
+
+    input[type="checkbox"] {
+        accent-color: #e8a9bd;
+    }
+
+    button {
+        background-color: #e8a9bd;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #d995ad;
+    }
+
+    h2 {
+        color: #c77d9b;
+    }
+
+    #receipt {
+        background-color: #fff8fa;
+        padding: 15px;
+        border-radius: 10px;
+        color: #6d5360;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SKU GENERATOR</h1>
+
+        <input type="checkbox" id="cerealPrawns" value=100>
+        <label for="Cereal Prawns">[100] Cereal Prawns</label>
+        <br>
+
+        <input type="checkbox" id="Shanghai" value=100>
+        <label for="Lumpiang shanghai">[100] Lumpiang shanghai</label>
+        <br>
+
+        <input type="checkbox" id="RiceStired" value=100>
+        <label for="Egg Stir Fried Rice">[100] Egg Stir Fried Rice</label>
+        <br>
+
+        <input type="checkbox" id="Coke" value=70>
+        <label for="Coke">[70] Diet Coke</label>
+        <br>
+
+        <input type="checkbox" id="XioBao" value=60>
+        <label for="Xiolongbao">[60] Xiolongbao</label>
+        <br>
+
+        <input type="checkbox" id="TuronCream" value=60>
+        <label for="Ice cream turon">[60] Ice cream turon</label>
+        <br>
+
+    </div>
+
+    <br>
+    <button py-click="Order">Order</button>
+
+
+        <h2>Receipt</h2>
+        <div id="receipt"></div>
+        <div class="y2k-text">
+
+        </div>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>
